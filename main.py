@@ -32,6 +32,6 @@ network = pylast.LastFMNetwork(api_key = API_KEY, api_secret = API_SECRET, usern
 
 #code
 
-print ("porcoddio");
+print ("Hello world e.e");
 
 bot.polling()

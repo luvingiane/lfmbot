@@ -6,3 +6,5 @@ apikey = ("YOURLfmApiKey")
 apisecret = ("YOURLfmApiSecret")
 lastfmu = ("YOURlfmUser")
 lastfmp= ("YOURLfmPasswd")
+
+# butler fa schifo

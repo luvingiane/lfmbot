@@ -71,5 +71,5 @@ def split_artist_track(artist_track):
         sys.exit("Error: Artist is blank")
     if len(track) is 0:
         sys.exit("Error: Track is blank")
-
+ 
     return (artist, track)

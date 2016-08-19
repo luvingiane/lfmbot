@@ -38,7 +38,7 @@ def start_command(message):
 
 @bot.message_handler(commands=['help'])
 def help_command(message):
-    bot.reply_to(message, "Bot scritto da mattia")
+    bot.reply_to(message, "Bot scritto da @matovvy o @marshalleriksen, ogni tanto da una mano @veetaw.")
 
 @bot.message_handler(commands=['gaipa'])
 def gaipa_command(message):

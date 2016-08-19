@@ -32,6 +32,17 @@ network = pylast.LastFMNetwork(api_key = API_KEY, api_secret = API_SECRET, usern
 
 #code
 
-print ("Hello world e.e");
+@bot.message_handler(commands=['start', 'help'])
+def send_welcome(message):
+    bot.reply_to(message, "Ciao, questo è un bot che ti invia lo scrobbling attuale. (è la versione 0.1,non c'è un cazzo in pratica :S)")
+
+@bot.message_handler(commands=['gaipa'])
+def send_welcome(message):
+    bot.reply_to(message, "PHP MERDAAAAAAAAA")
+
+@bot.message_handler(commands=['traccia'])
+def send_welcome(message):
+    bot.reply_to(message, print_track)
+
 
 bot.polling()

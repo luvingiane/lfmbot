@@ -41,12 +41,12 @@ def help_command(message):
     bot.reply_to(message, "Bot scritto da mattia")
 
 @bot.message_handler(commands=['gaipa'])
-def send_welcome(message):
+def gaipa_command(message):
     bot.reply_to(message, "PHP MERDAAAAAAAAA")
 
 @bot.message_handler(commands=['traccia'])
-def send_welcome(message):
-    bot.reply_to(message, print_track)
-
+def track_command(message):
+    #bot.reply_to(message, print_track)
+    pass
 
 bot.polling()

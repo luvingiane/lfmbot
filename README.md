@@ -1,2 +1,4 @@
 # lfmbot
-a LastFM bot for telegram, in italian , under development
+an italian LastFM bot for telegram, under development
+
+thanks to [pylast](https://github.com/pylast/pylast) for libraries.

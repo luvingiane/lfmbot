@@ -2,16 +2,16 @@
 # -*- coding: utf-8 -*-
 
 from __future__ import print_function
-from keys import token
-from keys import apikey
-from keys import apisecret
-from keys import lastfmu
-from keys import lastfmp
+from keys import (
+    token,
+    apikey,
+    apisecret,
+    lastfmu,
+    lastfmp)
 import telebot
 import argparse
 import pylast
 import sys
-
 from mylast import (
     lastfm_network,
     lastfm_username,
@@ -32,9 +32,13 @@ network = pylast.LastFMNetwork(api_key = API_KEY, api_secret = API_SECRET, usern
 
 #code
 
-@bot.message_handler(commands=['start', 'help'])
-def send_welcome(message):
+@bot.message_handler(commands=['start'])
+def start_command(message):
     bot.reply_to(message, "Ciao, questo è un bot che ti invia lo scrobbling attuale. (è la versione 0.1,non c'è un cazzo in pratica :S)")
+
+@bot.message_handler(commands=['help'])
+def help_command(message):
+    bot.reply_to(message, "Bot scritto da mattia")
 
 @bot.message_handler(commands=['gaipa'])
 def send_welcome(message):
